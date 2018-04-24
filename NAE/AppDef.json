@@ -7,7 +7,7 @@
     "Software Development/Software Testing"
   ],
   "machines": [
-    " ng*"
+    "ng*"
   ],
   "vault-types": [
     "FILE",
