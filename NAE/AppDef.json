@@ -1,5 +1,5 @@
 {
-  "name": "NVIDIA CUDA 9.1",
+  "name": "CUDA 9.1 (Ubuntu)",
   "description": "NVIDIA CUDA 9.1 with cuDNN v7 (7.1.3.16) on Ubuntu 16.04",
   "author": "NVIDIA",
   "licensed": true,
