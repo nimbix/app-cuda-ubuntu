@@ -3,7 +3,7 @@ LABEL maintainer="Nimbix, Inc."
 
 # Update SERIAL_NUMBER to force rebuild of all layers (don't use cached layers)
 ARG SERIAL_NUMBER
-ENV SERIAL_NUMBER ${SERIAL_NUMBER:-20180424.1530}
+ENV SERIAL_NUMBER ${SERIAL_NUMBER:-20180424.1830}
 
 ARG GIT_BRANCH
 ENV GIT_BRANCH ${GIT_BRANCH:-master}
@@ -15,7 +15,7 @@ RUN apt-get -y update && \
         | bash -s -- --setup-nimbix-desktop --image-common-branch $GIT_BRANCH
 
 # Install CUDA samples
-RUN apt-get -y install cuda-samples-9-1
+RUN apt-get -y install cuda-samples-9-1 && apt-get clean
 
 # Fix VirtualGL for sudo
 RUN chmod u+s /usr/lib/libdlfaker.so /usr/lib/libvglfaker.so
