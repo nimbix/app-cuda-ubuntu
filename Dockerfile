@@ -15,7 +15,7 @@ RUN apt-get -y update && \
         | bash -s -- --setup-nimbix-desktop --image-common-branch $GIT_BRANCH
 
 # Install CUDA samples
-RUN apt-get -y install cuda-samples-9-0
+RUN apt-get -y install cuda-samples-9-1
 
 # Fix VirtualGL for sudo
 RUN chmod u+s /usr/lib/libdlfaker.so /usr/lib/libvglfaker.so
